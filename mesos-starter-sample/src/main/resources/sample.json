@@ -1,0 +1,12 @@
+{
+  "id": "mesos-starter-sample",
+  "args": ["--zookeeperMesosUrl", "{{MINIMESOS_ZOOKEEPER}}"],
+  "cpus": 0.2,
+  "mem": 512.0,
+  "env": {
+    "JAVA_OPTS": "-Xms128m -Xmx256m"
+  },
+  "instances": 1,
+  "cmd": "java -jar mesos-starter-sample-minimesos.jar"
+
+}
